@@ -20,6 +20,6 @@ from main.views import *
 
 urlpatterns = [
 
-    # path('', HomePageView.as_view(),  name="home"),
-    # path("search/", SearchResultsView.as_view(), name="search_results"),
+    path('', HomePageView.as_view(),  name="home"),
+    path("search/", SearchResultsView.as_view(), name="search_results"),
 ]
