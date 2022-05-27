@@ -21,3 +21,4 @@ urlpatterns = [
     path('', include('main.urls')),
 ]+ static(settings.STATIC_URL, document_root=settings.BASE_DIR) + static(settings.MEDIA_URL,
                                                                                         document_root=settings.MEDIA_ROOT)
+#sss
