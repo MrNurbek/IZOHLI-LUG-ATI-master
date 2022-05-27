@@ -19,3 +19,22 @@ class SearchResultsView(ListView):
         query = self.request.GET.get("q")
         object_list = Word.objects.filter(Q(name=query))
         return object_list
+
+
+
+# server {
+#     listen 80;
+#     server_name gippologik-termin.uz;
+#
+#     location = /favicon.ico { access_log off; log_not_found off; }
+#     location /static/ {
+#         root /home/ubuntu/nurbek/djangodictionary
+# ;
+#     }
+#
+#     location / {
+#         include proxy_params;
+#         proxy_pass http://unix:/run/sayt.sock;
+#     }
+# }
+
