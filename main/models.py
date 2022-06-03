@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 
@@ -14,3 +15,4 @@ class Word(models.Model):
     class Meta:
         verbose_name = "So'z"
         verbose_name_plural = "So'zlar"
+
