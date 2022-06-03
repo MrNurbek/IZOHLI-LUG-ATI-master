@@ -21,7 +21,7 @@ from djangodictionary import settings
 
 urlpatterns = [
 
-    path('', HomePageView.as_view(),  name="home"),
-    path("search/", SearchResultsView.as_view(), name="search_results"),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL,
+                  path('', HomePageView.as_view(), name="home"),
+                  path("search/", SearchResultsView.as_view(), name="search_results"),
+              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL,
                                                                                          document_root=settings.STATIC_ROOT)
