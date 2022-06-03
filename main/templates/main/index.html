@@ -67,8 +67,9 @@
 <section class="home" id="home">
 
 
-    <form action="{% url 'search_results' %} "  method = "GET">
-        <input placeholder="" style=" text-align: center;height:41px; width: 400px; border: 1px solid #000000;border-radius: 30px;" type="search" id="gsearch" name="q">
+    <form action="{% url 'search_results' %} " method="GET">
+        <input style=" text-align: center;height:41px; width: 400px; border: 1px solid #000000;border-radius: 30px;"
+               type="search" id="gsearch" name="q">
         <br><br>
         <!--        <a href="#">-->
         <input type="submit" value="qidirish" class="btn" style="">
@@ -78,13 +79,13 @@
 
     <h1>
         <p>
-            <ul>
-              {% for word in word_list %}
-                <li>
-                  {{ word.name }} - {{ word.description }}
-                </li>
-              {% endfor %}
-            </ul>
+        <ul>
+            {% for word in word_list %}
+            <li>
+                {{ word.name }} - {{ word.description }}
+            </li>
+            {% endfor %}
+        </ul>
         </p>
     </h1>
     <div class="shape"></div>
@@ -167,3 +168,9 @@
 
 </body>
 </html>
+<style>
+    *{
+    text-transform: none;
+    }
+
+</style>
